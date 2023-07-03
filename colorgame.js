@@ -15,6 +15,7 @@ function init()
     setUpSquares();
     reset();
 }
+
 function setUpSquares()
 {
     for(var i=0;i<squares.length;i++)
@@ -39,6 +40,7 @@ function setUpSquares()
         });
     }
 }
+
 function setUpModeButton()
 {
     // mode button event Listeners
@@ -63,6 +65,7 @@ function setUpModeButton()
     }
  
 }
+
 function reset()
 {
     // generate all new colors
