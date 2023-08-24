@@ -6,16 +6,60 @@
     <title>Color Picker Game</title>
     <link rel="stylesheet" href="colorgame.css">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Kaushan Script', cursive;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        #stripe {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 500px;
+            margin-bottom: 1rem;
+        }
+
+        .mode {
+            padding: 0.5rem 1rem;
+        }
+
+        #container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 1rem;
+            max-width: 600px;
+        }
+
+        .square {
+            width: 100%;
+            padding-bottom: 100%;
+            background-color: lightblue;
+        }
+    </style>
 </head>
 <body>
     <h1>
-        The Greate 
+        The Great
         <br>
         <span id="colordisplay">RGB</span>
         <br>
         Color Game
     </h1>
-    <div id=stripe>
+    <div id="stripe">
         <button id="reset">New Colors</button>
         <span id="msg"></span>
         <button class="mode">Easy</button>
